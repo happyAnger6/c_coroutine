@@ -7,23 +7,12 @@
 #include "event_loop.h"
 #include "runtime.h"
 
-struct co_queue {
-    co_spinlock_t lock;
-    uint32_t len;
-    struct list_head queue;
-};
-
-struct co_p {
-    int32_t id;
-    pthread_t thread;
-    struct co_queue rq;
-    event_engine_t ev_engine;
-};
-
 typedef struct runtime {
-    struct co_p *all_p;
+    struct p *all_p;
     struct threadpool *th_pool;
 } *runtime_t;
+
+static pthread_key_t p_key;
 
 static int cpu_nums()
 {

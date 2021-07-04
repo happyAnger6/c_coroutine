@@ -10,7 +10,7 @@ typedef void (*co_func)(void*);
 typedef enum {
     CO_NEW=0,
     CO_RUNNABLE,
-    CO_RUNNINE,
+    CO_RUNNING,
     CO_INTERRUPTIBLE,
     CO_UNINTERRUPTIBLE,
     CO_DEAD
