@@ -2,7 +2,7 @@
 #include <ucontext.h>
 
 #include "types.h"
-#include "co_coroutine.h"
+#include "co.h"
 #include "runtime.h"
 #include "sched.h"
 

@@ -1,5 +1,5 @@
-#ifndef _CO_TYPES_H
-#define _CO_TYPES_H 
+#ifndef CO_TYPES_H
+#define CO_TYPES_H 
 
 #include <stdio.h>
 #include <stdlib.h>

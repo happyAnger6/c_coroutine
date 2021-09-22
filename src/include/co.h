@@ -1,5 +1,5 @@
-#ifndef _CO_COROUTINE_H
-#define _CO_COROUTINE_H 
+#ifndef CO_H
+#define CO_H 
 
 #ifdef __cplusplus
 extern "C"{

@@ -112,6 +112,11 @@ static void main_loop()
     }
 }
 
+void wake_up_new_coroutine(struct co *c)
+{
+
+}
+
 static int wakeup_co(struct co *c, int wake_flags)
 {
     sched_co_resume((void *)co);
